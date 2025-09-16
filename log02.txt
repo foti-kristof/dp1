@@ -18,3 +18,42 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is .\log02.txt
 ]633;D;0]633;A]633;P;Cwd=Z:\x5cwebprogramozas\x5cdp1PS Z:\webprogramozas\dp1> ]633;B
+PS>Start-Transcript -Path .\log02.txt -AppendStart-Transcript -Path .\log02.txt -Append
+>> TerminatingError(Start-Transcript): "Cannot bind parameter because parameter 'Path' is specified more than once. To provide multiple values to parameters that can accept multiple values, use the array syntax. For example, "-parameter value1,value2,value3"."
+Start-Transcript : Cannot bind parameter because parameter 'Path' is specified more than once. To provide multiple value
+s to parameters that can accept multiple values, use the array syntax. For example, "-parameter value1,value2,value3".
+At line:1 char:60
++ ... rt-Transcript -Path .\log02.txt -AppendStart-Transcript -Path .\log02 ...
++                                                             ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Transcript], ParameterBindingException
+    + FullyQualifiedErrorId : ParameterAlreadyBound,Microsoft.PowerShell.Commands.StartTranscriptCommand
+Start-Transcript : Cannot bind parameter because paramete
+r 'Path' is specified more than once. To provide multiple
+ values to parameters that can accept multiple values, us
+e the array syntax. For example, "-parameter value1,value
+2,value3".
+At line:1 char:60
++ ... rt-Transcript -Path .\log02.txt -AppendStart-Transc
+ript -Path .\log02 ...
++
+     ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Star
+   t-Transcript], ParameterBindingException
+    + FullyQualifiedErrorId : ParameterAlreadyBound,Micr
+   osoft.PowerShell.Commands.StartTranscriptCommand
+
+]633;D;1]633;A]633;P;Cwd=Z:\x5cwebprogramozas\x5cdp1PS Z:\webprogramozas\dp1> ]633;B
+PS>git add .
+
+]633;D;0]633;A]633;P;Cwd=Z:\x5cwebprogramozas\x5cdp1PS Z:\webprogramozas\dp1> ]633;B
+PS>git commit -m "20250916-dp1"
+
+]633;D;0]633;A]633;P;Cwd=Z:\x5cwebprogramozas\x5cdp1PS Z:\webprogramozas\dp1> ]633;B
+PS>git push
+
+]633;D;0]633;A]633;P;Cwd=Z:\x5cwebprogramozas\x5cdp1PS Z:\webprogramozas\dp1> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250916122605
+**********************
